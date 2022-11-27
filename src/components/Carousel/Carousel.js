@@ -5,6 +5,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 import NewsBlock from "./NewsBlock.js";
+import "./Carousel.css";
 import news from "../../data/news.json";
 
 
@@ -33,7 +34,7 @@ const Carousel = () => {
   };
 
   return (
-    <OwlCarousel className="owl-carousel owl-theme" {...options}>
+    <OwlCarousel id= "carousel" className="owl-carousel owl-theme" {...options}>
       {
         news.length === 0 ?
           <h2>No News</h2> :
