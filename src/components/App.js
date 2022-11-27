@@ -1,8 +1,11 @@
 import React from "react";
 
+import Carousel from "./Carousel/Carousel.js";
+
+
 const App = () => {
   return (
-    <h1>Hello</h1>
+    <Carousel />
   );
 };
 
